@@ -1,0 +1,27 @@
+import type { Metadata } from 'next'
+import './globals.css'
+
+export const metadata: Metadata = {
+  title: 'MediScope | Čteme studie. Kriticky.',
+  description: 'Překládáme vědecké důkazy do klinické praxe. Každý týden. V češtině.',
+  openGraph: {
+    title: 'MediScope',
+    description: 'Věda přeložená do klinické praxe.',
+    url: 'https://mediscope.cz',
+    siteName: 'MediScope',
+    locale: 'cs_CZ',
+    type: 'website',
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="cs">
+      <body>{children}</body>
+    </html>
+  )
+}
