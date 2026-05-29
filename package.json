@@ -1,27 +1,24 @@
-import type { Metadata } from 'next'
-import './globals.css'
-
-export const metadata: Metadata = {
-  title: 'MediScope | Čteme studie. Kriticky.',
-  description: 'Překládáme vědecké důkazy do klinické praxe. Každý týden. V češtině.',
-  openGraph: {
-    title: 'MediScope',
-    description: 'Věda přeložená do klinické praxe.',
-    url: 'https://mediscope.cz',
-    siteName: 'MediScope',
-    locale: 'cs_CZ',
-    type: 'website',
+{
+  "name": "mediscope-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="cs">
-      <body>{children}</body>
-    </html>
-  )
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8",
+    "autoprefixer": "^10.0.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
 }
